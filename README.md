@@ -1,2 +1,2 @@
 # Hotel_Room
-Hotel where the User can see the bookings available, the admin can see options etc etc
+A Hotel booking system where the secretary can view bookings, add etc etc.
