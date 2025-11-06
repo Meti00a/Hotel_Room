@@ -1,0 +1,15 @@
+/Users/meti/repos/Hotel_Room/bin/Debug/net8.0/Hotel_Room
+/Users/meti/repos/Hotel_Room/bin/Debug/net8.0/Hotel_Room.deps.json
+/Users/meti/repos/Hotel_Room/bin/Debug/net8.0/Hotel_Room.runtimeconfig.json
+/Users/meti/repos/Hotel_Room/bin/Debug/net8.0/Hotel_Room.dll
+/Users/meti/repos/Hotel_Room/bin/Debug/net8.0/Hotel_Room.pdb
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/Hotel_Room.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/Hotel_Room.AssemblyInfoInputs.cache
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/Hotel_Room.AssemblyInfo.cs
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/Hotel_Room.csproj.CoreCompileInputs.cache
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/Hotel_Room.dll
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/refint/Hotel_Room.dll
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/Hotel_Room.pdb
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/Hotel_Room.genruntimeconfig.cache
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/ref/Hotel_Room.dll
+/Users/meti/repos/Hotel_Room/obj/Debug/net8.0/Hotel_Room.sourcelink.json
