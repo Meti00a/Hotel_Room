@@ -3,7 +3,7 @@ using App;
 
 
 string filepath = "users.csv";   //en filpath till Users.csv
-string roomsFile = "rooms.csv"; //en filpath till rooms.csv
+ //en filpath till rooms.csv
 
 bool running = true;
 List<Room> rooms = new List<Room>                                                       //Lista av rooms som är tillgängliga
@@ -32,7 +32,19 @@ while (running)
 
         Console.WriteLine("Password: ");        //Inlogging för lösenord   
         string password = Console.ReadLine();
-        Console.Clear();
+        
+        if (username != "Secretary" || password != "pass")
+        {
+            Console.WriteLine("Login invalid! try again.");
+            Console.ReadLine();
+            continue;
+        }
+        else
+        {
+            Console.WriteLine("Login successful! Press Enter to continue.");
+            Console.ReadLine();
+        }
+
 
 
 
@@ -65,15 +77,44 @@ while (running)
 
                     Console.ReadLine();
                     break;
-
+                    
+                    
 
                 case "2":
-                    Console.WriteLine("Choose which room you would like to book:");  //en case för en bokningsfunktion av rum.
+                    Console.WriteLine("Choose which room you would like to book:");  //en case för en bokningsfunktion av rum.                    
+                    Console.WriteLine("Enter room number: ");
+                    
+                    string Room = Console.ReadLine();
+                    Console.WriteLine("Enter guest name:");                     
+                    string name = Console.ReadLine();
+                    Console.WriteLine($"Room {Room} has been booked for {name}.");              
                     Console.ReadLine();
                     break;
 
                 case "3":
-                    Console.WriteLine("Manage rooms");     //en case för att hantera vilka rum som är bokade eller tillgängliga.
+                    Console.WriteLine("Check Rooms");     //en case för att hantera vilka rum som är bokade eller tillgängliga.
+                    if (int.TryParse(Console.ReadLine(), out int roomIndex) && roomIndex >= 0 && roomIndex < rooms.Count)
+                    {
+                        Room selectedRoom = rooms[roomIndex];
+                        Console.WriteLine($"Room {selectedRoom.RoomNumber} is currently {selectedRoom.RoomState}.");
+                        Console.WriteLine("Enter new state (0: Available, 1: Occupied, 2: Unavailable): ");
+                        if (int.TryParse(Console.ReadLine(), out int newState) && newState >= 0 && newState <= 2)
+                        {
+                            selectedRoom.RoomState = (RoomStateEnum)newState;
+                            Console.WriteLine($"Room {selectedRoom.RoomNumber} state updated to {selectedRoom.RoomState}.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid state input.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid room index.");
+                    }
+
+           
+                    
                     Console.ReadLine();
                     break;
                 case "4":
